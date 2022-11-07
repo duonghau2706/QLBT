@@ -141,12 +141,6 @@
     <Compile Include="Forms_Banhang\frmLapHD.Designer.cs">
       <DependentUpon>frmLapHD.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms_Banhang\frmTKHoadon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms_Banhang\frmTKHoadon.Designer.cs">
-      <DependentUpon>frmTKHoadon.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms_CTThuoc\frmCT_thuoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,12 +183,6 @@
     <Compile Include="Forms_Quanlykho\frmTruyxuat.Designer.cs">
       <DependentUpon>frmTruyxuat.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms_Reports\rpt_DT_Khachhang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms_Reports\rpt_DT_Khachhang.Designer.cs">
-      <DependentUpon>rpt_DT_Khachhang.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms_Reports\rpt_DT_Nhomthuocprv.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,12 +218,6 @@
     </Compile>
     <Compile Include="Forms_SP_Reports\frm_SP_Doanhthu_Theothang.Designer.cs">
       <DependentUpon>frm_SP_Doanhthu_Theothang.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms_SP_Reports\frm_SP_DT_Khachhang.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms_SP_Reports\frm_SP_DT_Khachhang.Designer.cs">
-      <DependentUpon>frm_SP_DT_Khachhang.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms_SP_Reports\frm_SP_Thuoc_Hethan.cs">
       <SubType>Form</SubType>
@@ -316,12 +298,6 @@
       <DependentUpon>rptDT_Theothang.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="Reports\rpt_Khachhang_TOP.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>rpt_Khachhang_TOP.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Reports\rpt_Thuoc_Hethan.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -384,9 +360,6 @@
     <EmbeddedResource Include="Forms_Banhang\frmLapHD.resx">
       <DependentUpon>frmLapHD.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms_Banhang\frmTKHoadon.resx">
-      <DependentUpon>frmTKHoadon.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms_CTThuoc\frmCT_thuoc.resx">
       <DependentUpon>frmCT_thuoc.cs</DependentUpon>
     </EmbeddedResource>
@@ -408,9 +381,6 @@
     <EmbeddedResource Include="Forms_Quanlykho\frmTruyxuat.resx">
       <DependentUpon>frmTruyxuat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms_Reports\rpt_DT_Khachhang.resx">
-      <DependentUpon>rpt_DT_Khachhang.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms_Reports\rpt_DT_Nhomthuocprv.resx">
       <DependentUpon>rpt_DT_Nhomthuocprv.cs</DependentUpon>
     </EmbeddedResource>
@@ -428,9 +398,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_SP_Reports\frm_SP_Doanhthu_Theothang.resx">
       <DependentUpon>frm_SP_Doanhthu_Theothang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms_SP_Reports\frm_SP_DT_Khachhang.resx">
-      <DependentUpon>frm_SP_DT_Khachhang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_SP_Reports\frm_SP_Thuoc_Hethan.resx">
       <DependentUpon>frm_SP_Thuoc_Hethan.cs</DependentUpon>
@@ -478,10 +445,6 @@
     <EmbeddedResource Include="Reports\rptDT_Theothang.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptDT_Theothang.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Reports\rpt_Khachhang_TOP.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>rpt_Khachhang_TOP.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reports\rpt_Thuoc_Hethan.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

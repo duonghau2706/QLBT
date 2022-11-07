@@ -227,7 +227,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.TKHoadon.Name = "TKHoadon";
             this.TKHoadon.Size = new System.Drawing.Size(282, 30);
             this.TKHoadon.Text = "2. Tìm kiếm hóa đơn";
-            this.TKHoadon.Click += new System.EventHandler(this.TKHoadon_Click);
+            //this.TKHoadon.Click += new System.EventHandler(this.TKHoadon_Click);
             // 
             // báoCáoToolStripMenuItem
             // 
@@ -287,7 +287,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.doanhThuTheoKháchHàngToolStripMenuItem.Name = "doanhThuTheoKháchHàngToolStripMenuItem";
             this.doanhThuTheoKháchHàngToolStripMenuItem.Size = new System.Drawing.Size(392, 30);
             this.doanhThuTheoKháchHàngToolStripMenuItem.Text = "1.3. Doanh thu theo khách hàng";
-            this.doanhThuTheoKháchHàngToolStripMenuItem.Click += new System.EventHandler(this.doanhThuTheoKháchHàngToolStripMenuItem_Click);
+          //  this.doanhThuTheoKháchHàngToolStripMenuItem.Click += new System.EventHandler(this.doanhThuTheoKháchHàngToolStripMenuItem_Click);
             // 
             // toolStripSeparator11
             // 

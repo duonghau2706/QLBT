@@ -135,14 +135,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             this.Visible = false;
         }
 
-        private void TKHoadon_Click(object sender, EventArgs e)
+       /* private void TKHoadon_Click(object sender, EventArgs e)
         {
             string hello = lblNguoidung.Text;
             string hello1 = lblQuyen.Text;
             Forms_Banhang.frmTKHoadon f = new Forms_Banhang.frmTKHoadon(hello, hello1);
             f.Show();
             this.Visible = false;
-        }
+        }*/
 
         private void BCHSD_Click(object sender, EventArgs e)
         {
@@ -170,8 +170,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
                
         private void khoidau()
         {
-            
+      
             txtNgaynhap.Text = DateTime.Now.ToShortDateString();
+           // txtNgaynhap.Text = System.DateTime.Now.ToString();
             txtMaHD.Text = Class.Functions.CreateKey("HD");
             Class.Functions.FillCombo("SELECT MAKHACH, TENKHACH FROM tblKhachhang", cboKhachhang, "MAKHACH", "TENKHACH");
             cboKhachhang.SelectedIndex = -1;
@@ -208,7 +209,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             {                
                 if (txtNgaynhap.Text.Length == 0)
                 {
-                    MessageBox.Show("Bạn phải nhập ngày nhập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Bạn phải nhập ngày lập", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     txtNgaynhap.Focus();
                     return;
                 }
@@ -229,7 +230,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
                 MessageBox.Show("Bạn phải nhập tên thuốc", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 cboThuoc.Focus();
                 return;
-            }            
+            }  
+            if (cboLosx.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập lô sản xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtDongia.Focus();
+                return;
+            }
+
             if ((txtSoluong.Text.Trim().Length == 0) || (txtSoluong.Text == "0"))
             {
                 MessageBox.Show("Bạn phải nhập số lượng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -237,12 +245,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
                 txtSoluong.Focus();
                 return;
             }
-            if (cboLosx.Text.Trim().Length == 0)
-            {
-                MessageBox.Show("Bạn phải nhập lô sản xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtDongia.Focus();
-                return;
-            }
+            
 
             sql = "SELECT MATHUOC FROM tblCTHoadonban WHERE MATHUOC=N'" + cboThuoc.SelectedValue + "' AND MABAN = N'" + txtMaHD.Text.Trim() + "'";
             if (Functions.CheckKey(sql))
@@ -352,7 +355,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             double aa = Convert.ToDouble(txtTrakhach.Text);
             if (Convert.ToDouble(txtTrakhach.Text)>0)
             {
-                MessageBox.Show("Bạn cần phải trả khách thêm " + aa, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Bạn cần phải trả khách " + aa, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -428,12 +431,12 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
             f.ShowDialog();
         }
 
-        private void doanhThuTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+     /*   private void doanhThuTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string hello = lblNguoidung.Text;
             Forms_SP_Reports.frm_SP_DT_Khachhang f = new Forms_SP_Reports.frm_SP_DT_Khachhang(hello);
             f.ShowDialog();
-        }
+        }*/
 
         private void btnThemnhom_Click(object sender, EventArgs e)
         {            
@@ -459,6 +462,19 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Banhang
         {
             Forms_Messagebox.frm_Message_Hotro f = new Forms_Messagebox.frm_Message_Hotro();
             f.ShowDialog();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            khoidau();
+            ketnoi();
+            txtSoluong.Text = "";
+            txtKhachtra.Text = "0";
+            txtGiamgia.Text = "0";
+            txtTong.Text = "0";
+            txtTongtien.Text = "0";
+            txtTrakhach.Text = "0";
+
         }
     }
 

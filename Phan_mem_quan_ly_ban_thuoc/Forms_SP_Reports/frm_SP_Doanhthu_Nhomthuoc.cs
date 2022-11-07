@@ -38,13 +38,18 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
             string sql;
             double tt;
             rptDT_Nhomthuoc rpt = new rptDT_Nhomthuoc();
+            //sua di
             sql = "select a.MATHUOC, a.TENTHUOC,b.LOSX, sum(b.THANHTIEN) as THANHTIEN1 from tblThuoc as a, tblCTHoadonban as b,tblNhomthuoc as c where a.MATHUOC=b.MATHUOC and a.MANHOM=c.MANHOM and c.TENNHOM =N'" + cboNhomthuoc.Text +"' group by a.MATHUOC,a.TENTHUOC,b.LOSX";
             khuong = Class.Functions.GetDataToTable(sql);            
             rpt.SetDataSource(khuong);
-            rpt.DataDefinition.FormulaFields["MANHOM"].Text = "'" + cboNhomthuoc.Text + "'";
-            rpt.DataDefinition.FormulaFields["NGUOILAP"].Text = "'" + txtNguoidung.Text + "'";
-            string s = txtNguoidung.Text;
+            //Lay ten nv
+            sql = "select TENNHANVIEN from tblNhanvien where MANHANVIEN = N'" + txtNguoidung.Text + "';";
+            string TenNhanVien = Class.Functions.GetDataToTable(sql).Rows[0]["TENNHANVIEN"].ToString();
+            string s = TenNhanVien;
             s = s.Trim();
+            rpt.DataDefinition.FormulaFields["NGUOILAP"].Text = "'" + s + "'";
+            //
+            rpt.DataDefinition.FormulaFields["MANHOM"].Text = "'" + cboNhomthuoc.Text + "'";
             txtTen.Text = s.Substring(s.LastIndexOf(' ') + 1);
             rpt.DataDefinition.FormulaFields["TEN"].Text = "'" + txtTen.Text + "'";
             Forms_Reports.rpt_DT_Nhomthuocprv aa = new Forms_Reports.rpt_DT_Nhomthuocprv(rpt);

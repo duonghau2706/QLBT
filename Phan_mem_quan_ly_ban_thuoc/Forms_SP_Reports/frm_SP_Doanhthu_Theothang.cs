@@ -33,14 +33,18 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
             rptDT_Theothang rpt = new rptDT_Theothang();
             
 
-            sql = "select month(b.NGAYNHAP) as THANG ,sum(a.SLUONG) as SLUONG, sum(a.THANHTIEN) as THANHTIEN1 " +
+            sql = "select month(b.NGAYNHAP) as THANG , sum(a.SLUONG) as SLUONG, sum(a.THANHTIEN) as THANHTIEN1 " +
                 "from  tblCTHoadonban as a,tblHoadonban as b " +
                 "where a.MABAN=b.MABAN group by month(NGAYNHAP)";
             khuong = Class.Functions.GetDataToTable(sql);
-            rpt.SetDataSource(khuong);            
-            rpt.DataDefinition.FormulaFields["NGUOILAP"].Text = "'" + txtNguoidung.Text + "'";
-            string s = txtNguoidung.Text;
+            rpt.SetDataSource(khuong);
+            //Lay ten nv
+            sql = "select TENNHANVIEN from tblNhanvien where MANHANVIEN = N'" + txtNguoidung.Text + "';";
+            string TenNhanVien = Class.Functions.GetDataToTable(sql).Rows[0]["TENNHANVIEN"].ToString();
+            string s = TenNhanVien;
             s = s.Trim();
+            rpt.DataDefinition.FormulaFields["NGUOILAP"].Text = "'" + s + "'";
+            //
             txtTen.Text = s.Substring(s.LastIndexOf(' ') + 1);
             rpt.DataDefinition.FormulaFields["TEN"].Text = "'" + txtTen.Text + "'";
             Forms_Reports.rpt_DT_Theothangprv aa = new Forms_Reports.rpt_DT_Theothangprv(rpt);

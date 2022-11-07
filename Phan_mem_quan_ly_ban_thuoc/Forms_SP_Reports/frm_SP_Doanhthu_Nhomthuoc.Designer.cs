@@ -43,9 +43,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
             // 
             this.cboNhomthuoc.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cboNhomthuoc.FormattingEnabled = true;
-            this.cboNhomthuoc.Location = new System.Drawing.Point(259, 79);
+            this.cboNhomthuoc.Location = new System.Drawing.Point(291, 99);
+            this.cboNhomthuoc.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cboNhomthuoc.Name = "cboNhomthuoc";
-            this.cboNhomthuoc.Size = new System.Drawing.Size(218, 31);
+            this.cboNhomthuoc.Size = new System.Drawing.Size(245, 36);
             this.cboNhomthuoc.TabIndex = 0;
             // 
             // label1
@@ -53,9 +54,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(132, 82);
+            this.label1.Location = new System.Drawing.Point(148, 102);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 23);
+            this.label1.Size = new System.Drawing.Size(138, 29);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nhóm thuốc";
             // 
@@ -65,9 +66,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
             this.btn_Baocao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
             this.btn_Baocao.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Baocao.ForeColor = System.Drawing.Color.White;
-            this.btn_Baocao.Location = new System.Drawing.Point(164, 143);
+            this.btn_Baocao.Location = new System.Drawing.Point(184, 179);
+            this.btn_Baocao.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btn_Baocao.Name = "btn_Baocao";
-            this.btn_Baocao.Size = new System.Drawing.Size(296, 50);
+            this.btn_Baocao.Size = new System.Drawing.Size(333, 62);
             this.btn_Baocao.TabIndex = 1;
             this.btn_Baocao.Text = "Lập báo cáo";
             this.btn_Baocao.UseVisualStyleBackColor = false;
@@ -76,12 +78,13 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
             // button1
             // 
             this.button1.AccessibleDescription = "";
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(35)))), ((int)(((byte)(60)))));
             this.button1.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(164, 212);
+            this.button1.Location = new System.Drawing.Point(184, 265);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(296, 50);
+            this.button1.Size = new System.Drawing.Size(333, 62);
             this.button1.TabIndex = 2;
             this.button1.Text = "Thoát";
             this.button1.UseVisualStyleBackColor = false;
@@ -89,17 +92,19 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
             // 
             // txtNguoidung
             // 
-            this.txtNguoidung.Location = new System.Drawing.Point(662, 61);
+            this.txtNguoidung.Location = new System.Drawing.Point(745, 76);
+            this.txtNguoidung.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtNguoidung.Name = "txtNguoidung";
-            this.txtNguoidung.Size = new System.Drawing.Size(245, 22);
+            this.txtNguoidung.Size = new System.Drawing.Size(275, 26);
             this.txtNguoidung.TabIndex = 6;
             this.txtNguoidung.Visible = false;
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(662, 145);
+            this.txtTen.Location = new System.Drawing.Point(745, 181);
+            this.txtTen.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(245, 22);
+            this.txtTen.Size = new System.Drawing.Size(275, 26);
             this.txtTen.TabIndex = 7;
             this.txtTen.Visible = false;
             // 
@@ -108,18 +113,18 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nunito Black", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(56, 22);
+            this.label3.Location = new System.Drawing.Point(63, 28);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(531, 33);
+            this.label3.Size = new System.Drawing.Size(616, 38);
             this.label3.TabIndex = 4;
             this.label3.Text = "Bạn hãy chọn nhóm thuốc muốn lập báo cáo";
             // 
             // frm_SP_Doanhthu_Nhomthuoc
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            this.ClientSize = new System.Drawing.Size(627, 307);
+            this.ClientSize = new System.Drawing.Size(705, 384);
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.txtNguoidung);
             this.Controls.Add(this.button1);
@@ -129,6 +134,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
             this.Controls.Add(this.cboNhomthuoc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "frm_SP_Doanhthu_Nhomthuoc";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_SP_Doanhthu_Nhomthuoc";

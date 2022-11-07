@@ -39,9 +39,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
 
             khuong = Class.Functions.GetDataToTable(sql);
             rpt.SetDataSource(khuong);
-            rpt.DataDefinition.FormulaFields["NGUOILAP"].Text = "'" + txtNguoidung.Text + "'";
-            string s = txtNguoidung.Text;
+            //Lay ten nv
+            sql = "select TENNHANVIEN from tblNhanvien where MANHANVIEN = N'" + txtNguoidung.Text + "';";
+            string TenNhanVien = Class.Functions.GetDataToTable(sql).Rows[0]["TENNHANVIEN"].ToString();
+            string s = TenNhanVien;
             s = s.Trim();
+            rpt.DataDefinition.FormulaFields["NGUOILAP"].Text = "'" + s + "'";
+            //
+          //  rpt.DataDefinition.FormulaFields["NGUOILAP"].Text = "'" + txtNguoidung.Text + "'";
             txtTen.Text = s.Substring(s.LastIndexOf(' ') + 1);
             rpt.DataDefinition.FormulaFields["TEN"].Text = "'" + txtTen.Text + "'";
             Forms_Reports.rpt_Tonkho aa = new Forms_Reports.rpt_Tonkho(rpt);

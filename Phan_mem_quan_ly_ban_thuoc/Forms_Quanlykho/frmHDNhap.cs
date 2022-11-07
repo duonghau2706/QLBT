@@ -134,14 +134,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Quanlykho
             this.Visible = false;
         }
 
-        private void TKHoadon_Click(object sender, EventArgs e)
+      /*  private void TKHoadon_Click(object sender, EventArgs e)
         {
             string hello = lblNguoidung.Text;
             string hello1 = lblQuyen.Text;
             Forms_Banhang.frmTKHoadon f = new Forms_Banhang.frmTKHoadon(hello, hello1);
             f.Show();
             this.Visible = false;
-        }
+        }*/
 
         private void BCDoanhthu_Click(object sender, EventArgs e)
         {
@@ -352,11 +352,16 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Quanlykho
             f.ShowDialog();
         }
 
-        private void doanhThuTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        private void grdData_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+     /*   private void doanhThuTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string hello = lblNguoidung.Text;
             Forms_SP_Reports.frm_SP_DT_Khachhang f = new Forms_SP_Reports.frm_SP_DT_Khachhang(hello);
             f.ShowDialog();
-        }
+        }*/
     }
 }

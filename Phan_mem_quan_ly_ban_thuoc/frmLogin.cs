@@ -17,6 +17,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
         public bool islogin { get; set; }
         public string username { get; set; }
         public string fullname { get; set; }
+        public string fullname2 { get; set; }
         public string quyenhan { get; set; }
         public frmLogin()
         {
@@ -67,7 +68,7 @@ namespace Phan_mem_quan_ly_ban_thuoc
             {
                 if (i < 4)
                 {
-                    SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-MA2UE8D\HAU123;Initial Catalog=QLBT;Integrated Security=True");
+                    SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-BA1C3EL\SQLEXPRESS;Initial Catalog=QLBT;Integrated Security=True");
                     try
                     {
                         conn.Open();
@@ -79,7 +80,8 @@ namespace Phan_mem_quan_ly_ban_thuoc
                         if (dta.Read() == true)
                         {
                             islogin = true;
-                            fullname = dta["TENNHANVIEN"].ToString();
+                           // fullname = dta["TENNHANVIEN"].ToString();
+                            fullname = dta["MANHANVIEN"].ToString();
                             quyenhan = dta["QUYEN"].ToString();
                             this.Close();
                         }
