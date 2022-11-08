@@ -82,16 +82,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.Visible = false;
         }
 
-        private void DMNhacungcap_Click(object sender, EventArgs e)
-        {
-            string hello = lblNguoidung.Text;
-            string hello1 = lblQuyen.Text;
-            Forms.frmDMNhacungcap f = new Forms.frmDMNhacungcap(hello, hello1);
-            f.Show();
-            this.Visible = false;
-
-        }
-
         private void HDNhap_Click(object sender, EventArgs e)
         {
             string hello = lblNguoidung.Text;
@@ -188,14 +178,13 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             f.ShowDialog();
         }
 
-        private void frmMain_Load(object sender, EventArgs e)
+        private void DMNhacungcap_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
+             string hello = lblNguoidung.Text;
+            string hello1 = lblQuyen.Text;
+            Forms.frmDMNhacungcap f = new Forms.frmDMNhacungcap(hello, hello1);
+            f.Show();
+            this.Visible = false;
         }
     }
 }

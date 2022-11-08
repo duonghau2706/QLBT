@@ -373,6 +373,33 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             btnLoc.BackColor = Color.FromArgb(141, 153, 174);
         }
 
+        private void btnDel_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa thuốc này không?Y/N", "Xác nhận yêu cầu", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                int i = grdData.CurrentRow.Index;
+                sql = "delete from tblThuoc where MATHUOC = '" + grdData.Rows[i].Cells["MATHUOC"].Value.ToString() + "';";
+                Class.Functions.RunSqlDel(sql);
+                ketnoi();
+            }
+        }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            int i = grdData.CurrentRow.Index;
+            string mathuoc = grdData.Rows[i].Cells["MATHUOC"].Value.ToString();
+            string tenthuoc = grdData.Rows[i].Cells["TENTHUOC"].Value.ToString();
+            string tennhom = grdData.Rows[i].Cells["TENNHOM"].Value.ToString();
+            string hoatchat = grdData.Rows[i].Cells["HOATCHATCHINH"].Value.ToString();
+            string hamluong = grdData.Rows[i].Cells["HAMLUONG"].Value.ToString();
+            string hangsx = grdData.Rows[i].Cells["HANGSX"].Value.ToString();
+            string nuocsx = grdData.Rows[i].Cells["NUOCSX"].Value.ToString();
+            string quycach = grdData.Rows[i].Cells["QUYCACHDONGGOI"].Value.ToString();
+            string dvt = grdData.Rows[i].Cells["DVT"].Value.ToString();
+
+            Forms_Update.frmUp_thuoc f = new Forms_Update.frmUp_thuoc(mathuoc, tenthuoc, tennhom, hoatchat, hamluong, hangsx, nuocsx, quycach, dvt);
+            f.ShowDialog();
+        }
         private void doanhThuTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string hello = lblNguoidung.Text;

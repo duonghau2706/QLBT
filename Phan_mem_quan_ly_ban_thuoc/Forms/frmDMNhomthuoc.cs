@@ -349,9 +349,25 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             f.ShowDialog();
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void btnDel_Click(object sender, EventArgs e)
         {
+            if (MessageBox.Show("Bạn có chắc chắn muốn xóa nhóm thuốc này không?Y/N", "Xác nhận yêu cầu", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
+            {
+                int i = grdData.CurrentRow.Index;
+                sql = "delete from tblNhomthuoc where MANHOM = '" + grdData.Rows[i].Cells["MANHOM"].Value.ToString() + "';";
+                Class.Functions.RunSqlDel(sql);
+                ketnoi();
+            }
+        }
 
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            int i = grdData.CurrentRow.Index;
+            string mathuoc = grdData.Rows[i].Cells["MANHOM"].Value.ToString();
+            string tenthuoc = grdData.Rows[i].Cells["TENNHOM"].Value.ToString();
+            string manhom = grdData.Rows[i].Cells["GHICHU"].Value.ToString();
+            Forms_Update.frmUp_nhomthuoc f = new Forms_Update.frmUp_nhomthuoc(mathuoc, tenthuoc, manhom);
+            f.ShowDialog();
         }
 
         private void doanhThuTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)

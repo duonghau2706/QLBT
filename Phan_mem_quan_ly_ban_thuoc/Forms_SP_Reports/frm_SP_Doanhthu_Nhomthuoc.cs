@@ -38,7 +38,8 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_SP_Reports
             string sql;
             double tt;
             rptDT_Nhomthuoc rpt = new rptDT_Nhomthuoc();
-            sql = "select a.MATHUOC, a.TENTHUOC,b.LOSX, sum(b.THANHTIEN) as THANHTIEN1 from tblThuoc as a, tblCTHoadonban as b,tblNhomthuoc as c where a.MATHUOC=b.MATHUOC and a.MANHOM=c.MANHOM and c.TENNHOM =N'" + cboNhomthuoc.Text +"' group by a.MATHUOC,a.TENTHUOC,b.LOSX";
+            //sql = "select a.MATHUOC, a.TENTHUOC,b.LOSX, sum(b.THANHTIEN) as THANHTIEN1 from tblThuoc as a, tblCTHoadonban as b,tblNhomthuoc as c where a.MATHUOC=b.MATHUOC and a.MANHOM=c.MANHOM and c.TENNHOM =N'" + cboNhomthuoc.Text +"' group by a.MATHUOC,a.TENTHUOC,b.LOSX";
+            sql = "select b.MATHUOC, b.TENTHUOC, a.LOSX, sum(a.THANHTIEN) as THANHTIEN1 from tblCTHoadonban as a, tblThuoc as b where a.MATHUOC=b.MATHUOC and b.TENNHOM =N'" + cboNhomthuoc.Text + "' group by b.MATHUOC";
             khuong = Class.Functions.GetDataToTable(sql);            
             rpt.SetDataSource(khuong);
             rpt.DataDefinition.FormulaFields["MANHOM"].Text = "'" + cboNhomthuoc.Text + "'";

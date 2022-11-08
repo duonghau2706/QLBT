@@ -18,8 +18,15 @@ namespace Phan_mem_quan_ly_ban_thuoc.Class
         {
             connString = @"Data Source=DESKTOP-MA2UE8D\HAU123;Initial Catalog=QLBT;Integrated Security=True";
             Conn = new SqlConnection();
-            Conn.ConnectionString = connString; 	
-            Conn.Open();   
+            Conn.ConnectionString = connString; 
+            try
+            {
+                Conn.Open();
+            }
+            catch
+            {
+                MessageBox.Show("Đang thực hiện kết nối! Vui lòng chờ...");
+            }
         }
         public static void Disconnect()
         {
@@ -34,7 +41,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Class
         {
             SqlDataAdapter Mydata = new SqlDataAdapter(sql, Functions.Conn);
             DataTable table = new DataTable();
-            Mydata.Fill(table);
+            try
+            {
+                Mydata.Fill(table);
+            }
+            catch
+            {
+                MessageBox.Show("Đang tải dữ liệu!");
+            }
             return table;
         }
 

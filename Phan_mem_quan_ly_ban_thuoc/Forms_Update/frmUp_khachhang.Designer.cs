@@ -30,7 +30,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUp_khachhang));
             this.mskDienthoai = new System.Windows.Forms.MaskedTextBox();
             this.grdData = new System.Windows.Forms.DataGridView();
@@ -66,6 +66,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.grdData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblNhanvienBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHUOCDataSet)).BeginInit();
@@ -90,14 +91,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             // 
             this.grdData.AutoGenerateColumns = false;
             this.grdData.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nunito Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nunito Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.grdData.ColumnHeadersHeight = 30;
             this.grdData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.grdData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -289,8 +290,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             // 
             // txtMa
             // 
+            this.txtMa.Cursor = System.Windows.Forms.Cursors.No;
             this.txtMa.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMa.Location = new System.Drawing.Point(263, 139);
+            this.txtMa.Location = new System.Drawing.Point(263, 138);
             this.txtMa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(330, 35);
@@ -434,12 +436,23 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.label10.TabIndex = 104;
             this.label10.Text = "*";
             // 
+            // textBox1
+            // 
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
+            this.textBox1.Location = new System.Drawing.Point(263, 138);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(329, 35);
+            this.textBox1.TabIndex = 105;
+            // 
             // frmUp_khachhang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1189, 591);
+            this.Controls.Add(this.txtMa);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -459,7 +472,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtMa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox2);
@@ -520,5 +532,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
