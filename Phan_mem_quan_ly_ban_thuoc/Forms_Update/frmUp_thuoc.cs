@@ -38,25 +38,43 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
         {
             if (txtMa.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập mã nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn phải nhập mã thuốc", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtMa.Focus();
+                return;
+            }
+            if (cboNhomthuoc.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải tìm nhóm thuốc", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cboNhomthuoc.Focus();
                 return;
             }
             if (txtTen.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập tên nhân viên", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Bạn phải nhập tên thuốc", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtTen.Focus();
                 return;
-            }   
-            if (txtHangSX.Text.Trim().Length == 0)
+            }
+            if (txtHamluong.Text.Trim().Length == 0)
             {
-                MessageBox.Show("Bạn phải nhập hãng sản xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtTen.Focus();
+                MessageBox.Show("Bạn phải nhập hàm lượng thuốc", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtHamluong.Focus();
                 return;
             }
             if (txtHoatchat.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập hoạt chất chính", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtTen.Focus();
+                return;
+            }
+            if (txtNuocSX.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập nước sản xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtNuocSX.Focus();
+                return;
+            }
+            if (txtHangSX.Text.Trim().Length == 0)
+            {
+                MessageBox.Show("Bạn phải nhập hãng sản xuất", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtTen.Focus();
                 return;
             }
@@ -91,7 +109,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
         private void frmUp_thuoc_Load(object sender, EventArgs e)
         {
             Class.Functions.Connect();
-            khoa();
+            mokhoa();
             
         }
 
@@ -136,7 +154,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             txtQuycach.Enabled = true;
             txtDVT.Enabled = true;
         }
-
 
     }
 }

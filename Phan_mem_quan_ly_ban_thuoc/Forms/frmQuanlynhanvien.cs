@@ -381,7 +381,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa nhân viên này không?Y/N", "Xác nhận yêu cầu", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 int i = grdData.CurrentRow.Index;
-                sql = "delete from tblNhanvien where MANHANVIEN = '" + grdData.Rows[i].Cells["MANHANVIEN"].Value.ToString() + "';";
+                sql = "delete from tblNhanvien where MANHANVIEN = N'" + grdData.Rows[i].Cells["MANHANVIEN"].Value.ToString() + "';";
                 Class.Functions.RunSqlDel(sql);
                 ketnoi();
             }

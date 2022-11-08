@@ -31,7 +31,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmUp_nhomthuoc));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tblNhomthuocBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tHUOCDataSet = new Phan_mem_quan_ly_ban_thuoc.THUOCDataSet();
             this.tblNhanvienTableAdapter = new Phan_mem_quan_ly_ban_thuoc.THUOCDataSetTableAdapters.tblNhanvienTableAdapter();
@@ -60,6 +60,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.btnSua = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.tblNhomthuocBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tHUOCDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblNhanvienBindingSource)).BeginInit();
@@ -108,14 +109,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             // 
             this.grdData.AutoGenerateColumns = false;
             this.grdData.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nunito Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Nunito Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.grdData.ColumnHeadersHeight = 30;
             this.grdData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.grdData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -124,7 +125,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.GHICHU});
             this.grdData.DataSource = this.tblNhomthuocBindingSource;
             this.grdData.Location = new System.Drawing.Point(997, 172);
-            this.grdData.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.grdData.Margin = new System.Windows.Forms.Padding(6);
             this.grdData.Name = "grdData";
             this.grdData.RowHeadersWidth = 51;
             this.grdData.Size = new System.Drawing.Size(484, 195);
@@ -241,6 +242,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             // 
             // txtMa
             // 
+            this.txtMa.Cursor = System.Windows.Forms.Cursors.No;
             this.txtMa.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMa.Location = new System.Drawing.Point(318, 141);
             this.txtMa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
@@ -345,12 +347,24 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.label8.TabIndex = 143;
             this.label8.Text = "*";
             // 
+            // textBox1
+            // 
+            this.textBox1.Cursor = System.Windows.Forms.Cursors.No;
+            this.textBox1.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(318, 141);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(347, 35);
+            this.textBox1.TabIndex = 144;
+            // 
             // frmUp_nhomthuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(984, 675);
+            this.Controls.Add(this.txtMa);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnSua);
@@ -364,7 +378,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtTen);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtMa);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
@@ -421,5 +434,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

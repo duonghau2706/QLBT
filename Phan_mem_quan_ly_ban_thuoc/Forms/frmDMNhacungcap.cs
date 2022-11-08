@@ -93,12 +93,13 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
 
         private void DMNhacungcap_Click(object sender, EventArgs e)
         {
+            /*
             string hello = lblNguoidung.Text;
             string hello1 = lblQuyen.Text;
             Forms.frmDMNhacungcap f = new Forms.frmDMNhacungcap(hello, hello1);
             f.Show();
             this.Visible = false;
-
+            */
         }
 
         private void HDNhap_Click(object sender, EventArgs e)
@@ -269,7 +270,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            ketnoi();
+            //ketnoi();
         }
 
         private void grdData_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -347,7 +348,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             if (MessageBox.Show("Bạn có chắc chắn muốn xóa nhà cung cấp này không?Y/N", "Xác nhận yêu cầu", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button2) == DialogResult.Yes)
             {
                 int i = grdData.CurrentRow.Index;
-                sql = "delete from tblNhacungcap where MANCC = '" + grdData.Rows[i].Cells["MANCC"].Value.ToString() + "';";
+                sql = "delete from tblNhacungcap where MANCC = N'" + grdData.Rows[i].Cells["MANCC"].Value.ToString() + "';";
                 Class.Functions.RunSqlDel(sql);
                 ketnoi();
             }
@@ -365,7 +366,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             f.ShowDialog();
 
         }
-
         private void doanhThuTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string hello = lblNguoidung.Text;

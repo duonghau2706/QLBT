@@ -529,7 +529,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label1.Size = new System.Drawing.Size(1311, 108);
             this.label1.TabIndex = 13;
             this.label1.Text = "Phần mềm quản lý bán thuốc";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // frmMain
             // 
@@ -551,7 +550,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
@@ -580,7 +578,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.ToolStripMenuItem DMKhachhang;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator8;
-        private System.Windows.Forms.ToolStripMenuItem DMNhacungcap;
         private System.Windows.Forms.ToolStripMenuItem quảnLýKhoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem HDNhap;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator9;
@@ -614,5 +611,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
         private System.Windows.Forms.ToolStripMenuItem DT_Theothang;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem doanhThuTheoKháchHàngToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem DMNhacungcap;
     }
 }

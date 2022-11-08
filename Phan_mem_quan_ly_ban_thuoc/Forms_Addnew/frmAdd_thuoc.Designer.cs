@@ -30,7 +30,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAdd_thuoc));
             this.grdData = new System.Windows.Forms.DataGridView();
             this.mATHUOCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -107,14 +107,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             // 
             this.grdData.AutoGenerateColumns = false;
             this.grdData.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Nunito Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nunito Black", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.grdData.ColumnHeadersHeight = 30;
             this.grdData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.grdData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -317,7 +317,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Nunito Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(581, 224);
+            this.label7.Location = new System.Drawing.Point(574, 223);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(190, 31);
@@ -328,7 +328,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Nunito Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(585, 146);
+            this.label8.Location = new System.Drawing.Point(577, 145);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(187, 31);
@@ -348,7 +348,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Nunito Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(28, 385);
+            this.label5.Location = new System.Drawing.Point(24, 384);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(177, 31);
@@ -359,7 +359,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Nunito Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(63, 304);
+            this.label4.Location = new System.Drawing.Point(59, 303);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(142, 31);
@@ -372,14 +372,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.txtTen.Location = new System.Drawing.Point(229, 221);
             this.txtTen.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(348, 35);
+            this.txtTen.Size = new System.Drawing.Size(340, 35);
             this.txtTen.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Nunito Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(75, 225);
+            this.label3.Location = new System.Drawing.Point(71, 224);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 31);
@@ -392,14 +392,14 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.txtMa.Location = new System.Drawing.Point(229, 141);
             this.txtMa.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(348, 35);
+            this.txtMa.Size = new System.Drawing.Size(340, 35);
             this.txtMa.TabIndex = 0;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nunito Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(81, 146);
+            this.label2.Location = new System.Drawing.Point(77, 145);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(122, 31);
@@ -457,7 +457,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.txtHamluong.Location = new System.Drawing.Point(229, 301);
             this.txtHamluong.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txtHamluong.Name = "txtHamluong";
-            this.txtHamluong.Size = new System.Drawing.Size(348, 35);
+            this.txtHamluong.Size = new System.Drawing.Size(340, 35);
             this.txtHamluong.TabIndex = 2;
             // 
             // txtNuocSX
@@ -473,7 +473,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Nunito Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(590, 303);
+            this.label6.Location = new System.Drawing.Point(586, 302);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(181, 31);
@@ -493,7 +493,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Nunito Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(396, 385);
+            this.label9.Location = new System.Drawing.Point(391, 384);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(221, 31);
@@ -513,7 +513,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Nunito Black", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(845, 385);
+            this.label10.Location = new System.Drawing.Point(838, 385);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(140, 31);
@@ -576,6 +576,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             // btnThemnhom
             // 
             this.btnThemnhom.BackColor = System.Drawing.Color.DodgerBlue;
+            this.btnThemnhom.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThemnhom.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnThemnhom.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnThemnhom.ForeColor = System.Drawing.Color.White;
@@ -626,7 +627,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold);
             this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(764, 141);
+            this.label14.Location = new System.Drawing.Point(764, 143);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(23, 29);
             this.label14.TabIndex = 131;
@@ -659,7 +660,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold);
             this.label17.ForeColor = System.Drawing.Color.Red;
-            this.label17.Location = new System.Drawing.Point(979, 379);
+            this.label17.Location = new System.Drawing.Point(979, 378);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(23, 29);
             this.label17.TabIndex = 134;
@@ -670,7 +671,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Addnew
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Nunito Black", 10.2F, System.Drawing.FontStyle.Bold);
             this.label18.ForeColor = System.Drawing.Color.Red;
-            this.label18.Location = new System.Drawing.Point(199, 381);
+            this.label18.Location = new System.Drawing.Point(199, 380);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(23, 29);
             this.label18.TabIndex = 135;

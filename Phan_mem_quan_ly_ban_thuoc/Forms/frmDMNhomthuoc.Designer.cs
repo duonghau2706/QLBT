@@ -33,7 +33,8 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             System.Windows.Forms.PictureBox pictureBox2;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDMNhomthuoc));
             System.Windows.Forms.PictureBox pictureBox3;
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DMKhachhang = new System.Windows.Forms.ToolStripMenuItem();
             this.DMNhacungcap = new System.Windows.Forms.ToolStripMenuItem();
             this.quảnLýKhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -86,7 +87,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnUpdate = new System.Windows.Forms.Button();
             this.lblTong = new System.Windows.Forms.Label();
             this.txtMa = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.btnTK = new System.Windows.Forms.Button();
             this.btnLoc = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -106,6 +106,8 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.tblNhomthuocBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tHUOCDataSet = new Phan_mem_quan_ly_ban_thuoc.THUOCDataSet();
             this.tblNhomthuocTableAdapter = new Phan_mem_quan_ly_ban_thuoc.THUOCDataSetTableAdapters.tblNhomthuocTableAdapter();
+            this.btnEdit = new System.Windows.Forms.Button();
+            this.btnDel = new System.Windows.Forms.Button();
             pictureBox2 = new System.Windows.Forms.PictureBox();
             pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).BeginInit();
@@ -132,7 +134,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 25;
             pictureBox2.TabStop = false;
-            pictureBox2.UseWaitCursor = true;
             // 
             // pictureBox3
             // 
@@ -145,7 +146,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 32;
             pictureBox3.TabStop = false;
-            pictureBox3.UseWaitCursor = true;
             // 
             // DMKhachhang
             // 
@@ -361,7 +361,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.pictureBox1.Size = new System.Drawing.Size(393, 166);
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.UseWaitCursor = true;
             // 
             // toolStripSeparator6
             // 
@@ -389,7 +388,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.statusStrip3.Size = new System.Drawing.Size(342, 42);
             this.statusStrip3.TabIndex = 30;
             this.statusStrip3.Text = "statusStrip3";
-            this.statusStrip3.UseWaitCursor = true;
             // 
             // lblThoigian
             // 
@@ -422,7 +420,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.statusStrip1.Size = new System.Drawing.Size(1984, 42);
             this.statusStrip1.TabIndex = 28;
             this.statusStrip1.Text = "statusStrip1";
-            this.statusStrip1.UseWaitCursor = true;
             // 
             // lblNguoidung
             // 
@@ -456,7 +453,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.statusStrip2.Size = new System.Drawing.Size(393, 42);
             this.statusStrip2.TabIndex = 29;
             this.statusStrip2.Text = "statusStrip2";
-            this.statusStrip2.UseWaitCursor = true;
             // 
             // menuStrip1
             // 
@@ -484,7 +480,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.menuStrip1.Stretch = false;
             this.menuStrip1.TabIndex = 27;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.UseWaitCursor = true;
             // 
             // btnHethong
             // 
@@ -577,26 +572,25 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.label2.Font = new System.Drawing.Font("Nunito Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(1101, 21);
+            this.label2.Location = new System.Drawing.Point(847, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(528, 55);
+            this.label2.Size = new System.Drawing.Size(549, 66);
             this.label2.TabIndex = 34;
             this.label2.Text = "Danh mục nhóm thuốc";
-            this.label2.UseWaitCursor = true;
             // 
             // pictureBox4
             // 
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.pictureBox4.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.pictureBox4.Location = new System.Drawing.Point(388, -2);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(1935, 128);
             this.pictureBox4.TabIndex = 33;
             this.pictureBox4.TabStop = false;
-            this.pictureBox4.UseWaitCursor = true;
             // 
             // btnUpdate
             // 
@@ -611,7 +605,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnUpdate.TabIndex = 5;
             this.btnUpdate.Text = "&Cập nhật";
             this.btnUpdate.UseVisualStyleBackColor = false;
-            this.btnUpdate.UseWaitCursor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // lblTong
@@ -625,7 +618,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.lblTong.Size = new System.Drawing.Size(110, 25);
             this.lblTong.TabIndex = 89;
             this.lblTong.Text = "Tổng số : ";
-            this.lblTong.UseWaitCursor = true;
             // 
             // txtMa
             // 
@@ -635,106 +627,89 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(235, 31);
             this.txtMa.TabIndex = 88;
-            this.txtMa.UseWaitCursor = true;
             this.txtMa.Visible = false;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(585, 1091);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(375, 25);
-            this.label3.TabIndex = 87;
-            this.label3.Text = "Kích đúp để sửa thông tin nhóm thuốc";
-            this.label3.UseWaitCursor = true;
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // btnTK
             // 
             this.btnTK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            this.btnTK.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnTK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnTK.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTK.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTK.ForeColor = System.Drawing.Color.White;
-            this.btnTK.Location = new System.Drawing.Point(1385, 222);
+            this.btnTK.Location = new System.Drawing.Point(1219, 248);
             this.btnTK.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnTK.Name = "btnTK";
             this.btnTK.Size = new System.Drawing.Size(152, 58);
             this.btnTK.TabIndex = 3;
-            this.btnTK.Text = "&Tìm lại";
+            this.btnTK.Text = "&Hủy lọc";
             this.btnTK.UseVisualStyleBackColor = false;
-            this.btnTK.UseWaitCursor = true;
             this.btnTK.Click += new System.EventHandler(this.btnTK_Click);
             // 
             // btnLoc
             // 
             this.btnLoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            this.btnLoc.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLoc.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnLoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoc.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoc.ForeColor = System.Drawing.Color.White;
-            this.btnLoc.Location = new System.Drawing.Point(1221, 222);
+            this.btnLoc.Location = new System.Drawing.Point(1055, 248);
             this.btnLoc.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnLoc.Name = "btnLoc";
             this.btnLoc.Size = new System.Drawing.Size(152, 58);
             this.btnLoc.TabIndex = 2;
             this.btnLoc.Text = "&Lọc";
             this.btnLoc.UseVisualStyleBackColor = false;
-            this.btnLoc.UseWaitCursor = true;
             this.btnLoc.Click += new System.EventHandler(this.btnLoc_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.label1.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label1.Location = new System.Drawing.Point(927, 201);
+            this.label1.Location = new System.Drawing.Point(762, 225);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(154, 25);
+            this.label1.Size = new System.Drawing.Size(197, 33);
             this.label1.TabIndex = 84;
             this.label1.Text = "Giá trị tìm kiếm";
-            this.label1.UseWaitCursor = true;
             // 
             // comGT
             // 
-            this.comGT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comGT.Font = new System.Drawing.Font("Nunito Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comGT.FormattingEnabled = true;
-            this.comGT.Location = new System.Drawing.Point(906, 234);
+            this.comGT.Location = new System.Drawing.Point(767, 262);
             this.comGT.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.comGT.Name = "comGT";
-            this.comGT.Size = new System.Drawing.Size(255, 32);
+            this.comGT.Size = new System.Drawing.Size(255, 36);
             this.comGT.TabIndex = 1;
-            this.comGT.UseWaitCursor = true;
             // 
             // comTruong
             // 
-            this.comTruong.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comTruong.Font = new System.Drawing.Font("Nunito Black", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comTruong.FormattingEnabled = true;
             this.comTruong.Items.AddRange(new object[] {
             "Mã nhóm",
             "Tên nhóm"});
-            this.comTruong.Location = new System.Drawing.Point(590, 234);
+            this.comTruong.Location = new System.Drawing.Point(484, 262);
             this.comTruong.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.comTruong.Name = "comTruong";
-            this.comTruong.Size = new System.Drawing.Size(250, 32);
+            this.comTruong.Size = new System.Drawing.Size(250, 36);
             this.comTruong.TabIndex = 0;
-            this.comTruong.UseWaitCursor = true;
             this.comTruong.SelectedIndexChanged += new System.EventHandler(this.comTruong_SelectedIndexChanged);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.label8.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DarkBlue;
-            this.label8.Location = new System.Drawing.Point(602, 201);
+            this.label8.Location = new System.Drawing.Point(477, 225);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(117, 25);
+            this.label8.Size = new System.Drawing.Size(141, 33);
             this.label8.TabIndex = 81;
             this.label8.Text = "Tên trường";
-            this.label8.UseWaitCursor = true;
             // 
             // btnXoa
             // 
@@ -749,23 +724,22 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnXoa.TabIndex = 6;
             this.btnXoa.Text = "&Xoá";
             this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.UseWaitCursor = true;
             this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnAddnew
             // 
             this.btnAddnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            this.btnAddnew.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddnew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnAddnew.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddnew.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddnew.ForeColor = System.Drawing.Color.White;
-            this.btnAddnew.Location = new System.Drawing.Point(1561, 222);
+            this.btnAddnew.Location = new System.Drawing.Point(1379, 248);
             this.btnAddnew.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.btnAddnew.Name = "btnAddnew";
-            this.btnAddnew.Size = new System.Drawing.Size(180, 58);
+            this.btnAddnew.Size = new System.Drawing.Size(152, 58);
             this.btnAddnew.TabIndex = 4;
-            this.btnAddnew.Text = "+   &Thêm mới";
+            this.btnAddnew.Text = " &Thêm";
             this.btnAddnew.UseVisualStyleBackColor = false;
-            this.btnAddnew.UseWaitCursor = true;
             this.btnAddnew.Click += new System.EventHandler(this.btnAddnew_Click);
             // 
             // btnLast
@@ -781,7 +755,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnLast.TabIndex = 78;
             this.btnLast.Text = "&Cuối";
             this.btnLast.UseVisualStyleBackColor = false;
-            this.btnLast.UseWaitCursor = true;
             this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
             // 
             // btnNext
@@ -797,7 +770,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnNext.TabIndex = 77;
             this.btnNext.Text = "&Sau";
             this.btnNext.UseVisualStyleBackColor = false;
-            this.btnNext.UseWaitCursor = true;
             this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // btnPrv
@@ -813,7 +785,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnPrv.TabIndex = 76;
             this.btnPrv.Text = "&Trước";
             this.btnPrv.UseVisualStyleBackColor = false;
-            this.btnPrv.UseWaitCursor = true;
             this.btnPrv.Click += new System.EventHandler(this.btnPrv_Click);
             // 
             // btnFirst
@@ -829,36 +800,43 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.btnFirst.TabIndex = 75;
             this.btnFirst.Text = "&Đầu";
             this.btnFirst.UseVisualStyleBackColor = false;
-            this.btnFirst.UseWaitCursor = true;
             this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
             // 
             // grdData
             // 
+            this.grdData.AllowUserToOrderColumns = true;
             this.grdData.AutoGenerateColumns = false;
             this.grdData.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Nunito Black", 9.749999F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdData.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.grdData.ColumnHeadersHeight = 30;
             this.grdData.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.grdData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MANHOM,
             this.TENNHOM,
             this.GHICHU});
-            this.grdData.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.grdData.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.grdData.DataSource = this.tblNhomthuocBindingSource;
-            this.grdData.Location = new System.Drawing.Point(588, 334);
+            this.grdData.Location = new System.Drawing.Point(485, 357);
             this.grdData.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.grdData.Name = "grdData";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Nunito", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.grdData.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.grdData.RowHeadersWidth = 51;
-            this.grdData.Size = new System.Drawing.Size(1538, 751);
+            this.grdData.Size = new System.Drawing.Size(1366, 579);
             this.grdData.TabIndex = 74;
-            this.grdData.UseWaitCursor = true;
             this.grdData.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdData_CellClick);
             this.grdData.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdData_CellDoubleClick);
             // 
@@ -906,16 +884,49 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // 
             this.tblNhomthuocTableAdapter.ClearBeforeFill = true;
             // 
+            // btnEdit
+            // 
+            this.btnEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            this.btnEdit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnEdit.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.White;
+            this.btnEdit.Location = new System.Drawing.Point(1539, 248);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(152, 58);
+            this.btnEdit.TabIndex = 90;
+            this.btnEdit.Text = " &Sửa";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // btnDel
+            // 
+            this.btnDel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
+            this.btnDel.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnDel.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDel.ForeColor = System.Drawing.Color.White;
+            this.btnDel.Location = new System.Drawing.Point(1699, 248);
+            this.btnDel.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.btnDel.Name = "btnDel";
+            this.btnDel.Size = new System.Drawing.Size(152, 58);
+            this.btnDel.TabIndex = 91;
+            this.btnDel.Text = " &Xóa";
+            this.btnDel.UseVisualStyleBackColor = false;
+            this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
+            // 
             // frmDMNhomthuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1946, 1106);
+            this.ClientSize = new System.Drawing.Size(1946, 1005);
+            this.Controls.Add(this.btnDel);
+            this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.lblTong);
             this.Controls.Add(this.txtMa);
-            this.Controls.Add(this.label3);
             this.Controls.Add(this.btnTK);
             this.Controls.Add(this.btnLoc);
             this.Controls.Add(this.label1);
@@ -938,13 +949,12 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.statusStrip2);
             this.Controls.Add(this.menuStrip1);
-            this.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmDMNhomthuoc";
             this.Text = "frmDMNhomthuoc";
-            this.UseWaitCursor = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmDMNhomthuoc_Load);
             ((System.ComponentModel.ISupportInitialize)(pictureBox2)).EndInit();
@@ -1016,7 +1026,6 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Label lblTong;
         private System.Windows.Forms.TextBox txtMa;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnTK;
         private System.Windows.Forms.Button btnLoc;
         private System.Windows.Forms.Label label1;
@@ -1041,5 +1050,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
         private System.Windows.Forms.ToolStripMenuItem doanhThuTheoThángToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
+        private System.Windows.Forms.Button btnEdit;
+        private System.Windows.Forms.Button btnDel;
     }
 }

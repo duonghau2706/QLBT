@@ -65,7 +65,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms_Update
         {
             Class.Functions.Connect();
             ketnoi();
-            khoa();
+            mokhoa();
         }
 
         private void ketnoi()
