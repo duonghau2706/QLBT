@@ -575,7 +575,9 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
             this.label2.Font = new System.Drawing.Font("Nunito Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
+
             this.label2.Location = new System.Drawing.Point(519, 21);
+
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(578, 66);
             this.label2.TabIndex = 34;
@@ -600,7 +602,7 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.lblTong.Location = new System.Drawing.Point(2002, 1190);
             this.lblTong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTong.Name = "lblTong";
-            this.lblTong.Size = new System.Drawing.Size(105, 28);
+            this.lblTong.Size = new System.Drawing.Size(106, 28);
             this.lblTong.TabIndex = 72;
             this.lblTong.Text = "Tổng số : ";
             // 
@@ -614,6 +616,21 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.txtMa.TabIndex = 71;
             this.txtMa.Visible = false;
             // 
+
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Nunito Black", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(499, 1056);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(262, 28);
+            this.label3.TabIndex = 70;
+            this.label3.Text = "Kích đúp để sửa thông tin";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+
             // btnTK
             // 
             this.btnTK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
@@ -710,8 +727,8 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             // 
             // btnAddnew
             // 
-            this.btnAddnew.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(54)))), ((int)(((byte)(86)))));
-            this.btnAddnew.Cursor = System.Windows.Forms.Cursors.Hand;
+
+            this.btnAddnew.BackColor = System.Drawing.Color.ForestGreen;
             this.btnAddnew.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAddnew.Font = new System.Drawing.Font("Nunito Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddnew.ForeColor = System.Drawing.Color.White;
@@ -946,7 +963,10 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             this.Controls.Add(this.statusStrip2);
             this.Controls.Add(this.menuStrip1);
             this.Cursor = System.Windows.Forms.Cursors.Default;
+
+
             this.Font = new System.Drawing.Font("Nunito", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

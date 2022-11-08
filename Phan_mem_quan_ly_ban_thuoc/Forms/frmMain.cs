@@ -186,5 +186,15 @@ namespace Phan_mem_quan_ly_ban_thuoc.Forms
             f.Show();
             this.Visible = false;
         }
+
+        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            this.BackColor = Color.FromArgb(43, 45, 46);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.FromArgb(43, 45, 46);
+        }
     }
 }
